@@ -1,24 +1,12 @@
-<!DOCTYPE html><html><head><title>Swift is like Kotlin</title><meta charset="utf-8"><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/highlightjs-github.css"><script src="js/highlight.9.4.0.js"></script><script>hljs.initHighlightingOnLoad();</script></head><body><a target="_blank" href="https://github.com/Nilhcem/swift-is-like-kotlin"><img id="fork-me" src="http://nilhcem.github.io/swift-is-like-kotlin/fork-me.png"></a><div id="note">Swift is like Kotlin</div><div class="section"><div class="title">BASICS</div><div class="case"><div class="name">Hello World</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>print("Hello, world!")
-</code></pre></div><div class="card"><div class="lang">Kotlin</div><pre class="code"><code>println("Hello, world!")
-</code></pre></div></div></div><div class="case"><div class="name">Variables And Constants</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>var myVariable = 42
+<!DOCTYPE html><html><head><title>Swift is like TypeScript</title><meta charset="utf-8"><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/highlightjs-github.css"><script src="js/highlight.9.4.0.js"></script><script>hljs.initHighlightingOnLoad();</script></head><body><a target="_blank" href="https://github.com/alhazmy13/swift-is-like-TypeScript"><img id="fork-me" src="https://raw.githubusercontent.com/alhazmy13/alhazmy13.github.io/master/fork-me.png"></a><div id="note">Swift is like TypeScript</div><div class="section"><div class="title">BASICS</div><div class="case"><div class="name">Hello World</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>print("Hello, world!")
+</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code></code></pre></div></div></div><div class="case"><div class="name">Variables And Constants</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>var myVariable = 42
 myVariable = 50
-let myConstant = 42</code></pre></div><div class="card"><div class="lang">Kotlin</div><pre class="code"><code>var myVariable = 42
-myVariable = 50
-val myConstant = 42
-</code></pre></div></div></div><div class="case"><div class="name">Explicit Types</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>let explicitDouble: Double = 70</code></pre></div><div class="card"><div class="lang">Kotlin</div><pre class="code"><code>val explicitDouble: Double = 70.0
-</code></pre></div></div></div><div class="case"><div class="name">Type Coercion</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>let label = "The width is "
+let myConstant = 42</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code></code></pre></div></div></div><div class="case"><div class="name">Explicit Types</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>let explicitDouble: Double = 70</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code></code></pre></div></div></div><div class="case"><div class="name">Type Coercion</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>let label = "The width is "
 let width = 94
-let widthLabel = label + String(width)</code></pre></div><div class="card"><div class="lang">Kotlin</div><pre class="code"><code>val label = "The width is "
-val width = 94
-val widthLabel = label + width
-</code></pre></div></div></div><div class="case"><div class="name">String Interpolation</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>let apples = 3
+let widthLabel = label + String(width)</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code></code></pre></div></div></div><div class="case"><div class="name">String Interpolation</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>let apples = 3
 let oranges = 5
 let fruitSummary = "I have \(apples + oranges) " +
-                   "pieces of fruit."</code></pre></div><div class="card"><div class="lang">Kotlin</div><pre class="code"><code>val apples = 3
-val oranges = 5
-val fruitSummary = "I have ${apples + oranges} " +
-                   "pieces of fruit."
-</code></pre></div></div></div><div class="case"><div class="name">Range Operator</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>let names = ["Anna", "Alex", "Brian", "Jack"]
+                   "pieces of fruit."</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code></code></pre></div></div></div><div class="case"><div class="name">Range Operator</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>let names = ["Anna", "Alex", "Brian", "Jack"]
 let count = names.count
 for i in 0..&lt;count {
     print("Person \(i + 1) is called \(names[i])")
@@ -27,62 +15,28 @@ for i in 0..&lt;count {
 // Person 2 is called Alex
 // Person 3 is called Brian
 // Person 4 is called Jack
-</code></pre></div><div class="card"><div class="lang">Kotlin</div><pre class="code"><code>val names = arrayOf("Anna", "Alex", "Brian", "Jack")
-val count = names.count()
-for (i in 0..count - 1) {
-    println("Person ${i + 1} is called ${names[i]}")
-}
-// Person 1 is called Anna
-// Person 2 is called Alex
-// Person 3 is called Brian
-// Person 4 is called Jack
-</code></pre></div></div></div><div class="case"><div class="name">Inclusive Range Operator</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>for index in 1...5 {
+</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code></code></pre></div></div></div><div class="case"><div class="name">Inclusive Range Operator</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>for index in 1...5 {
     print("\(index) times 5 is \(index * 5)")
 }
 // 1 times 5 is 5
 // 2 times 5 is 10
 // 3 times 5 is 15
 // 4 times 5 is 20
-// 5 times 5 is 25</code></pre></div><div class="card"><div class="lang">Kotlin</div><pre class="code"><code>for (index in 1..5) {
-    println("$index times 5 is ${index * 5}")
-}
-// 1 times 5 is 5
-// 2 times 5 is 10
-// 3 times 5 is 15
-// 4 times 5 is 20
-// 5 times 5 is 25
-</code></pre></div></div></div></div><div class="section"><div class="title">COLLECTIONS</div><div class="case"><div class="name">Arrays</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>var shoppingList = ["catfish", "water",
+// 5 times 5 is 25</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code></code></pre></div></div></div></div><div class="section"><div class="title">COLLECTIONS</div><div class="case"><div class="name">Arrays</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>var shoppingList = ["catfish", "water",
     "tulips", "blue paint"]
-shoppingList[1] = "bottle of water"</code></pre></div><div class="card"><div class="lang">Kotlin</div><pre class="code"><code>val shoppingList = arrayOf("catfish", "water",
-    "tulips", "blue paint")
-shoppingList[1] = "bottle of water"
-</code></pre></div></div></div><div class="case"><div class="name">Maps</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>var occupations = [
+shoppingList[1] = "bottle of water"</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code></code></pre></div></div></div><div class="case"><div class="name">Maps</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>var occupations = [
     "Malcolm": "Captain",
     "Kaylee": "Mechanic",
 ]
-occupations["Jayne"] = "Public Relations"</code></pre></div><div class="card"><div class="lang">Kotlin</div><pre class="code"><code>val occupations = mutableMapOf(
-    "Malcolm" to "Captain",
-    "Kaylee" to "Mechanic"
-)
-occupations["Jayne"] = "Public Relations"
-</code></pre></div></div></div><div class="case"><div class="name">Empty Collections</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>let emptyArray = [String]()
+occupations["Jayne"] = "Public Relations"</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code></code></pre></div></div></div><div class="case"><div class="name">Empty Collections</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>let emptyArray = [String]()
 let emptyDictionary = [String: Float]()
-</code></pre></div><div class="card"><div class="lang">Kotlin</div><pre class="code"><code>val emptyArray = arrayOf&lt;String>()
-val emptyMap = mapOf&lt;String, Float>()
-</code></pre></div></div></div></div><div class="section"><div class="title">FUNCTIONS</div><div class="case"><div class="name">Functions</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>func greet(_ name: String,_ day: String) -> String {
+</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code></code></pre></div></div></div></div><div class="section"><div class="title">FUNCTIONS</div><div class="case"><div class="name">Functions</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>func greet(_ name: String,_ day: String) -> String {
     return "Hello \(name), today is \(day)."
 }
 greet("Bob", "Tuesday")
-</code></pre></div><div class="card"><div class="lang">Kotlin</div><pre class="code"><code>fun greet(name: String, day: String): String {
-    return "Hello $name, today is $day."
-}
-greet("Bob", "Tuesday")
-</code></pre></div></div></div><div class="case"><div class="name">Tuple Return</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>func getGasPrices() -> (Double, Double, Double) {
+</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code></code></pre></div></div></div><div class="case"><div class="name">Tuple Return</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>func getGasPrices() -> (Double, Double, Double) {
     return (3.59, 3.69, 3.79)
-}</code></pre></div><div class="card"><div class="lang">Kotlin</div><pre class="code"><code>data class GasPrices(val a: Double, val b: Double,
-     val c: Double)
-fun getGasPrices() = GasPrices(3.59, 3.69, 3.79)
-</code></pre></div></div></div><div class="case"><div class="name">Variable Number Of Arguments</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>func sumOf(_ numbers: Int...) -> Int {
+}</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code></code></pre></div></div></div><div class="case"><div class="name">Variable Number Of Arguments</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>func sumOf(_ numbers: Int...) -> Int {
     var sum = 0
     for number in numbers {
         sum += number
@@ -90,18 +44,7 @@ fun getGasPrices() = GasPrices(3.59, 3.69, 3.79)
     return sum
 }
 sumOf(42, 597, 12)
-</code></pre></div><div class="card"><div class="lang">Kotlin</div><pre class="code"><code>fun sumOf(vararg numbers: Int): Int {
-    var sum = 0
-    for (number in numbers) {
-        sum += number
-    }
-    return sum
-}
-sumOf(42, 597, 12)
-
-// sumOf() can also be written in a shorter way:
-fun sumOf(vararg numbers: Int) = numbers.sum()
-</code></pre></div></div></div><div class="case"><div class="name">Function Type</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>func makeIncrementer() -> (Int -> Int) {
+</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code></code></pre></div></div></div><div class="case"><div class="name">Function Type</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>func makeIncrementer() -> (Int -> Int) {
     func addOne(number: Int) -> Int {
         return 1 + number
     }
@@ -109,50 +52,22 @@ fun sumOf(vararg numbers: Int) = numbers.sum()
 }
 let increment = makeIncrementer()
 increment(7)
-</code></pre></div><div class="card"><div class="lang">Kotlin</div><pre class="code"><code>fun makeIncrementer(): (Int) -> Int {
-    val addOne = fun(number: Int): Int {
-        return 1 + number
-    }
-    return addOne
-}
-val increment = makeIncrementer()
-increment(7)
-
-// makeIncrementer can also be written in a shorter way:
-fun makeIncrementer() = fun(number: Int) = 1 + number
-</code></pre></div></div></div><div class="case"><div class="name">Map</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>let numbers = [20, 19, 7, 12]
+</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code></code></pre></div></div></div><div class="case"><div class="name">Map</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>let numbers = [20, 19, 7, 12]
 numbers.map { 3 * $0 }
-</code></pre></div><div class="card"><div class="lang">Kotlin</div><pre class="code"><code>val numbers = listOf(20, 19, 7, 12)
-numbers.map { 3 * it }
-</code></pre></div></div></div><div class="case"><div class="name">Sort</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>var mutableArray = [1, 5, 3, 12, 2]
+</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code></code></pre></div></div></div><div class="case"><div class="name">Sort</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>var mutableArray = [1, 5, 3, 12, 2]
 mutableArray.sort()
-</code></pre></div><div class="card"><div class="lang">Kotlin</div><pre class="code"><code>listOf(1, 5, 3, 12, 2).sorted()
-</code></pre></div></div></div><div class="case"><div class="name">Named Arguments</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>func area(width: Int, height: Int) -> Int {
+</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code></code></pre></div></div></div><div class="case"><div class="name">Named Arguments</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>func area(width: Int, height: Int) -> Int {
     return width * height
 }
 area(width: 2, height: 3)
-</code></pre></div><div class="card"><div class="lang">Kotlin</div><pre class="code"><code>fun area(width: Int, height: Int) = width * height
-area(width = 2, height = 3)
-
-// This is also possible with named arguments
-area(2, height = 2)
-area(height = 3, width = 2)
-</code></pre></div></div></div></div><div class="section"><div class="title">CLASSES</div><div class="case"><div class="name">Declaration</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>class Shape {
+</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code></code></pre></div></div></div></div><div class="section"><div class="title">CLASSES</div><div class="case"><div class="name">Declaration</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>class Shape {
     var numberOfSides = 0
     func simpleDescription() -> String {
         return "A shape with \(numberOfSides) sides."
     }
-}</code></pre></div><div class="card"><div class="lang">Kotlin</div><pre class="code"><code>class Shape {
-    var numberOfSides = 0
-    fun simpleDescription() =
-        "A shape with $numberOfSides sides."
-}
-</code></pre></div></div></div><div class="case"><div class="name">Usage</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>var shape = Shape()
+}</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code></code></pre></div></div></div><div class="case"><div class="name">Usage</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>var shape = Shape()
 shape.numberOfSides = 7
-var shapeDescription = shape.simpleDescription()</code></pre></div><div class="card"><div class="lang">Kotlin</div><pre class="code"><code>var shape = Shape()
-shape.numberOfSides = 7
-var shapeDescription = shape.simpleDescription()
-</code></pre></div></div></div><div class="case"><div class="name">Subclass</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>class NamedShape {
+var shapeDescription = shape.simpleDescription()</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code></code></pre></div></div></div><div class="case"><div class="name">Subclass</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>class NamedShape {
     var numberOfSides: Int = 0
     let name: String
 
@@ -187,29 +102,7 @@ class Square: NamedShape {
 let test = Square(sideLength: 5.2, name: "square")
 test.area()
 test.simpleDescription()
-</code></pre></div><div class="card"><div class="lang">Kotlin</div><pre class="code"><code>open class NamedShape(val name: String) {
-    var numberOfSides = 0
-
-    open fun simpleDescription() =
-        "A shape with $numberOfSides sides."
-}
-
-class Square(var sideLength: BigDecimal, name: String) :
-        NamedShape(name) {
-    init {
-        numberOfSides = 4
-    }
-
-    fun area() = sideLength.pow(2)
-
-    override fun simpleDescription() =
-        "A square with sides of length $sideLength."
-}
-
-val test = Square(BigDecimal("5.2"), "square")
-test.area()
-test.simpleDescription()
-</code></pre></div></div></div><div class="case"><div class="name">Checking Type</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>var movieCount = 0
+</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code></code></pre></div></div></div><div class="case"><div class="name">Checking Type</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>var movieCount = 0
 var songCount = 0
 
 for item in library {
@@ -218,17 +111,7 @@ for item in library {
     } else if item is Song {
         songCount += 1
     }
-}</code></pre></div><div class="card"><div class="lang">Kotlin</div><pre class="code"><code>var movieCount = 0
-var songCount = 0
-
-for (item in library) {
-    if (item is Movie) {
-        ++movieCount
-    } else if (item is Song) {
-        ++songCount
-    }
-}
-</code></pre></div></div></div><div class="case"><div class="name">Pattern Matching</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>let nb = 42
+}</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code></code></pre></div></div></div><div class="case"><div class="name">Pattern Matching</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>let nb = 42
 switch nb {
     case 0...7, 8, 9: print("single digit")
     case 10: print("double digits")
@@ -236,41 +119,20 @@ switch nb {
     case 100...999: print("triple digits")
     default: print("four or more digits")
 }
-</code></pre></div><div class="card"><div class="lang">Kotlin</div><pre class="code"><code>val nb = 42
-when (nb) {
-    in 0..7, 8, 9 -> println("single digit")
-    10 -> println("double digits")
-    in 11..99 -> println("double digits")
-    in 100..999 -> println("triple digits")
-    else -> println("four or more digits")
-}
-</code></pre></div></div></div><div class="case"><div class="name">Downcasting</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>for current in someObjects {
+</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code></code></pre></div></div></div><div class="case"><div class="name">Downcasting</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>for current in someObjects {
     if let movie = current as? Movie {
         print("Movie: '\(movie.name)', " +
             "dir. \(movie.director)")
     }
 }
-</code></pre></div><div class="card"><div class="lang">Kotlin</div><pre class="code"><code>for (current in someObjects) {
-    if (current is Movie) {
-        println("Movie: '${current.name}', " +
-	    "dir. ${current.director}")
-    }
-}
-</code></pre></div></div></div><div class="case"><div class="name">Protocol</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>protocol Nameable {
+</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code></code></pre></div></div></div><div class="case"><div class="name">Protocol</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>protocol Nameable {
     func name() -> String
 }
 
 func f&lt;T: Nameable>(x: T) {
     print("Name is " + x.name())
 }
-</code></pre></div><div class="card"><div class="lang">Kotlin</div><pre class="code"><code>interface Nameable {
-    fun name(): String
-}
-
-fun f&lt;T: Nameable>(x: T) {
-    println("Name is " + x.name())
-}
-</code></pre></div></div></div><div class="case"><div class="name">Extensions</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>extension Double {
+</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code></code></pre></div></div></div><div class="case"><div class="name">Extensions</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>extension Double {
     var km: Double { return self * 1_000.0 }
     var m: Double { return self }
     var cm: Double { return self / 100.0 }
@@ -283,16 +145,4 @@ print("One inch is \(oneInch) meters")
 let threeFeet = 3.ft
 print("Three feet is \(threeFeet) meters")
 // prints "Three feet is 0.914399970739201 meters"
-</code></pre></div><div class="card"><div class="lang">Kotlin</div><pre class="code"><code>val Double.km: Double get() = this * 1000
-val Double.m: Double get() = this
-val Double.cm: Double get() = this / 100
-val Double.mm: Double get() = this / 1000
-val Double.ft: Double get() = this / 3.28084
-
-val oneInch = 25.4.mm
-println("One inch is $oneInch meters")
-// prints "One inch is 0.0254 meters"
-val threeFeet = 3.0.ft
-println("Three feet is $threeFeet meters")
-// prints "Three feet is 0.914399970739201 meters"
-</code></pre></div></div></div></div></body></html>
+</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code></code></pre></div></div></div></div></body></html>
