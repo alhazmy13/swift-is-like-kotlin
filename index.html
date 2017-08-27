@@ -54,11 +54,10 @@ shoppingList[1] = "bottle of water";</code></pre></div></div></div><div class="c
     "Malcolm": "Captain",
     "Kaylee": "Mechanic",
 ]
-occupations["Jayne"] = "Public Relations"</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code>var occupations: Map<string, string> = new Map<string, string>();
+occupations["Jayne"] = "Public Relations"</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code>var occupations:{ [key: string]: string; } = {}
 occupations["Malcolm"] = "Captain";
 occupations["Kaylee"] = "Mechanic";
-occupations["Jayne"] = "Public Relations";
-console.log(occupations['Malcolm']);</code></pre></div></div></div><div class="case"><div class="name">Empty Collections</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>let emptyArray = [String]()
+occupations["Jayne"] = "Public Relations";</code></pre></div></div></div><div class="case"><div class="name">Empty Collections</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>let emptyArray = [String]()
 </code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code>let emptyArray: string[] = []</code></pre></div></div></div></div><div class="section"><div class="title">FUNCTIONS</div><div class="case"><div class="name">Functions</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>func greet(_ name: String,_ day: String) -> String {
     return "Hello \(name), today is \(day)."
 }
