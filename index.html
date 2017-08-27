@@ -26,14 +26,27 @@ for i in 0..&lt;count {
 </code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code>let names = ["Anna", "Alex", "Brian", "Jack"];
 names.forEach((value: string, index: number) => {
     console.log("Person " + index + " is called " + value);
-});</code></pre></div></div></div><div class="case"><div class="name">Inclusive Range Operator</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>for index in 1...5 {
+});
+// Person 1 is called Anna
+// Person 2 is called Alex
+// Person 3 is called Brian
+// Person 4 is called Jack
+</code></pre></div></div></div><div class="case"><div class="name">Inclusive Range Operator</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>for index in 1...5 {
     print("\(index) times 5 is \(index * 5)")
 }
 // 1 times 5 is 5
 // 2 times 5 is 10
 // 3 times 5 is 15
 // 4 times 5 is 20
-// 5 times 5 is 25</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code></code></pre></div></div></div></div><div class="section"><div class="title">COLLECTIONS</div><div class="case"><div class="name">Arrays</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>var shoppingList = ["catfish", "water",
+// 5 times 5 is 25</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code>for (let index = 1; index <= 5;index ++){
+    console.log(index + " times 5 is " + (index * 5));
+}
+
+// OR //
+
+Array.from({ length: 5 }, (value, key) => {
+        console.log((key+1) + " times 5 is " + ((key+1) * 5));
+});</code></pre></div></div></div></div><div class="section"><div class="title">COLLECTIONS</div><div class="case"><div class="name">Arrays</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>var shoppingList = ["catfish", "water",
     "tulips", "blue paint"]
 shoppingList[1] = "bottle of water"</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code>var shoppingList: string[] = ["catfish", "water",
     "tulips", "blue paint"];
@@ -50,7 +63,7 @@ console.log(occupations['Malcolm']);</code></pre></div></div></div><div class="c
     return "Hello \(name), today is \(day)."
 }
 greet("Bob", "Tuesday")
-</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code>greet(name: string, day: string): string {
+</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code>function greet(name: string, day: string): string {
     return "Hello " + name + ", today is " + day + ".";
 }
 greet("Bob", "Tuesday");</code></pre></div></div></div><div class="case"><div class="name">Tuple Return</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>func getGasPrices() -> (Double, Double, Double) {
