@@ -2,12 +2,19 @@
 </code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code>console.log("Hello, world!");
 </code></pre></div></div></div><div class="case"><div class="name">Variables And Constants</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>var myVariable = 42
 myVariable = 50
-let myConstant = 42</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code></code></pre></div></div></div><div class="case"><div class="name">Explicit Types</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>let explicitDouble: Double = 70</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code>let explicitDouble: number = 70;</code></pre></div></div></div><div class="case"><div class="name">Type Coercion</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>let label = "The width is "
+let myConstant = 42</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code>var myVariable = 42;
+myVariable = 50;
+const myConstant = 42;</code></pre></div></div></div><div class="case"><div class="name">Explicit Types</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>let explicitDouble: Double = 70</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code>let explicitDouble: number = 70;</code></pre></div></div></div><div class="case"><div class="name">Type Coercion</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>let label = "The width is "
 let width = 94
-let widthLabel = label + String(width)</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code></code></pre></div></div></div><div class="case"><div class="name">String Interpolation</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>let apples = 3
+let widthLabel = label + String(width)</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code>let label = "The width is ";
+let width = 94;
+let widthLabel = label + String(width);</code></pre></div></div></div><div class="case"><div class="name">String Interpolation</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>let apples = 3
 let oranges = 5
 let fruitSummary = "I have \(apples + oranges) " +
-                   "pieces of fruit."</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code></code></pre></div></div></div><div class="case"><div class="name">Range Operator</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>let names = ["Anna", "Alex", "Brian", "Jack"]
+                   "pieces of fruit."</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code>let apples = 3;
+let oranges = 5;
+let fruitSummary = "I have " + (apples + oranges) + " pieces of fruit.";
+</code></pre></div></div></div><div class="case"><div class="name">Range Operator</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>let names = ["Anna", "Alex", "Brian", "Jack"]
 let count = names.count
 for i in 0..&lt;count {
     print("Person \(i + 1) is called \(names[i])")
@@ -16,7 +23,10 @@ for i in 0..&lt;count {
 // Person 2 is called Alex
 // Person 3 is called Brian
 // Person 4 is called Jack
-</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code></code></pre></div></div></div><div class="case"><div class="name">Inclusive Range Operator</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>for index in 1...5 {
+</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code>let names = ["Anna", "Alex", "Brian", "Jack"];
+names.forEach((value: string, index: number) => {
+    console.log("Person " + index + " is called " + value);
+});</code></pre></div></div></div><div class="case"><div class="name">Inclusive Range Operator</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>for index in 1...5 {
     print("\(index) times 5 is \(index * 5)")
 }
 // 1 times 5 is 5
@@ -45,7 +55,9 @@ greet("Bob", "Tuesday")
 }
 greet("Bob", "Tuesday");</code></pre></div></div></div><div class="case"><div class="name">Tuple Return</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>func getGasPrices() -> (Double, Double, Double) {
     return (3.59, 3.69, 3.79)
-}</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code></code></pre></div></div></div><div class="case"><div class="name">Variable Number Of Arguments</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>func sumOf(_ numbers: Int...) -> Int {
+}</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code>const getGasPrices = (): [number, number, number] => {
+    return [3.59, 3.69, 3.79];
+};</code></pre></div></div></div><div class="case"><div class="name">Variable Number Of Arguments</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>func sumOf(_ numbers: Int...) -> Int {
     var sum = 0
     for number in numbers {
         sum += number
@@ -53,7 +65,15 @@ greet("Bob", "Tuesday");</code></pre></div></div></div><div class="case"><div cl
     return sum
 }
 sumOf(42, 597, 12)
-</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code></code></pre></div></div></div><div class="case"><div class="name">Function Type</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>func makeIncrementer() -> (Int -> Int) {
+</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code>function sumOf(...numbers: number[]): number {
+    var sum = 0
+    for (let number of numbers) {
+        sum += number;
+    }
+    return sum
+}
+sumOf(42, 597, 12);
+</code></pre></div></div></div><div class="case"><div class="name">Function Type</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>func makeIncrementer() -> (Int -> Int) {
     func addOne(number: Int) -> Int {
         return 1 + number
     }
@@ -74,11 +94,12 @@ numbers.map { 3 * $0 }
 numbers.map(value => console.log(value * 3));
 </code></pre></div></div></div><div class="case"><div class="name">Sort</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>var mutableArray = [1, 5, 3, 12, 2]
 mutableArray.sort()
-</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code></code></pre></div></div></div><div class="case"><div class="name">Named Arguments</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>func area(width: Int, height: Int) -> Int {
+</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code>var mutableArray = [1, 5, 3, 12, 2];
+mutableArray.sort((n1,n2) => n1 - n2);</code></pre></div></div></div><div class="case"><div class="name">Named Arguments</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>func area(width: Int, height: Int) -> Int {
     return width * height
 }
 area(width: 2, height: 3)
-</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code></code></pre></div></div></div></div><div class="section"><div class="title">CLASSES</div><div class="case"><div class="name">Declaration</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>class Shape {
+</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code>------</code></pre></div></div></div></div><div class="section"><div class="title">CLASSES</div><div class="case"><div class="name">Declaration</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>class Shape {
     var numberOfSides = 0
     func simpleDescription() -> String {
         return "A shape with \(numberOfSides) sides."
@@ -91,7 +112,9 @@ area(width: 2, height: 3)
     }
 }</code></pre></div></div></div><div class="case"><div class="name">Usage</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>var shape = Shape()
 shape.numberOfSides = 7
-var shapeDescription = shape.simpleDescription()</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code></code></pre></div></div></div><div class="case"><div class="name">Subclass</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>class NamedShape {
+var shapeDescription = shape.simpleDescription()</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code>var shape = new Shape();
+shape.numberOfSides = 7;
+var shapeDescription = shape.simpleDescription();</code></pre></div></div></div><div class="case"><div class="name">Subclass</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>class NamedShape {
     var numberOfSides: Int = 0
     let name: String
 
@@ -126,7 +149,42 @@ class Square: NamedShape {
 let test = Square(sideLength: 5.2, name: "square")
 test.area()
 test.simpleDescription()
-</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code></code></pre></div></div></div><div class="case"><div class="name">Checking Type</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>var movieCount = 0
+</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code>class NamedShape {
+    numberOfSides: number = 0;
+    name: string;
+
+    constructor(name: string) {
+        this.name = name;
+    }
+
+    simpleDescription(): string {
+        return "A shape with " + this.numberOfSides + " sides.";
+    }
+}
+
+class Square extends NamedShape {
+    sideLength: number;
+
+    constructor(sideLength: number, name: string) {
+        super(name);
+        this.sideLength = sideLength;
+        this.numberOfSides = 4;
+    }
+
+    area() : number {
+        return this.sideLength * this.sideLength
+    }
+
+    simpleDescription(): string {
+        return "A square with sides of length " +
+        this.sideLength + "."
+    }
+}
+
+let test = new Square(5.2, "square");
+test.area();
+test.simpleDescription();
+</code></pre></div></div></div><div class="case"><div class="name">Checking Type</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>var movieCount = 0
 var songCount = 0
 
 for item in library {
