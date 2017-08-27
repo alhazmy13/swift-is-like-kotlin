@@ -1,7 +1,8 @@
-<!DOCTYPE html><html><head><title>Swift is like TypeScript</title><meta charset="utf-8"><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/highlightjs-github.css"><script src="js/highlight.9.4.0.js"></script><script>hljs.initHighlightingOnLoad();</script></head><body><a target="_blank" href="https://github.com/alhazmy13/swift-is-like-TypeScript"><img id="fork-me" src="https://raw.githubusercontent.com/alhazmy13/alhazmy13.github.io/master/fork-me.png"></a><div id="note">Swift is like TypeScript</div><div class="section"><div class="title">BASICS</div><div class="case"><div class="name">Hello World</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>print("Hello, world!")
-</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code></code></pre></div></div></div><div class="case"><div class="name">Variables And Constants</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>var myVariable = 42
+<!DOCTYPE html><html><head><title>Swift is like TypeScript</title><meta charset="utf-8"><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/highlightjs-github.css"><script src="js/highlight.9.4.0.js"></script><script>hljs.initHighlightingOnLoad();</script></head><body><a target="_blank" href="https://github.com/alhazmy13/swift-is-like-TypeScript"><img id="fork-me" src="https://raw.githubusercontent.com/alhazmy13/swift-is-like-typescript/gh-pages/fork-me.png"></a><div id="note">Swift is like TypeScript</div><div class="section"><div class="title">BASICS</div><div class="case"><div class="name">Hello World</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>print("Hello, world!")
+</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code>console.log("Hello, world!");
+</code></pre></div></div></div><div class="case"><div class="name">Variables And Constants</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>var myVariable = 42
 myVariable = 50
-let myConstant = 42</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code></code></pre></div></div></div><div class="case"><div class="name">Explicit Types</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>let explicitDouble: Double = 70</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code></code></pre></div></div></div><div class="case"><div class="name">Type Coercion</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>let label = "The width is "
+let myConstant = 42</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code></code></pre></div></div></div><div class="case"><div class="name">Explicit Types</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>let explicitDouble: Double = 70</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code>let explicitDouble: number = 70;</code></pre></div></div></div><div class="case"><div class="name">Type Coercion</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>let label = "The width is "
 let width = 94
 let widthLabel = label + String(width)</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code></code></pre></div></div></div><div class="case"><div class="name">String Interpolation</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>let apples = 3
 let oranges = 5
@@ -24,17 +25,25 @@ for i in 0..&lt;count {
 // 4 times 5 is 20
 // 5 times 5 is 25</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code></code></pre></div></div></div></div><div class="section"><div class="title">COLLECTIONS</div><div class="case"><div class="name">Arrays</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>var shoppingList = ["catfish", "water",
     "tulips", "blue paint"]
-shoppingList[1] = "bottle of water"</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code></code></pre></div></div></div><div class="case"><div class="name">Maps</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>var occupations = [
+shoppingList[1] = "bottle of water"</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code>var shoppingList: string[] = ["catfish", "water",
+    "tulips", "blue paint"];
+shoppingList[1] = "bottle of water";</code></pre></div></div></div><div class="case"><div class="name">Maps</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>var occupations = [
     "Malcolm": "Captain",
     "Kaylee": "Mechanic",
 ]
-occupations["Jayne"] = "Public Relations"</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code></code></pre></div></div></div><div class="case"><div class="name">Empty Collections</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>let emptyArray = [String]()
-let emptyDictionary = [String: Float]()
-</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code></code></pre></div></div></div></div><div class="section"><div class="title">FUNCTIONS</div><div class="case"><div class="name">Functions</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>func greet(_ name: String,_ day: String) -> String {
+occupations["Jayne"] = "Public Relations"</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code>var occupations: Map<string, string> = new Map<string, string>();
+occupations["Malcolm"] = "Captain";
+occupations["Kaylee"] = "Mechanic";
+occupations["Jayne"] = "Public Relations";
+console.log(occupations['Malcolm']);</code></pre></div></div></div><div class="case"><div class="name">Empty Collections</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>let emptyArray = [String]()
+</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code>let emptyArray: string[] = []</code></pre></div></div></div></div><div class="section"><div class="title">FUNCTIONS</div><div class="case"><div class="name">Functions</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>func greet(_ name: String,_ day: String) -> String {
     return "Hello \(name), today is \(day)."
 }
 greet("Bob", "Tuesday")
-</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code></code></pre></div></div></div><div class="case"><div class="name">Tuple Return</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>func getGasPrices() -> (Double, Double, Double) {
+</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code>greet(name: string, day: string): string {
+    return "Hello " + name + ", today is " + day + ".";
+}
+greet("Bob", "Tuesday");</code></pre></div></div></div><div class="case"><div class="name">Tuple Return</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>func getGasPrices() -> (Double, Double, Double) {
     return (3.59, 3.69, 3.79)
 }</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code></code></pre></div></div></div><div class="case"><div class="name">Variable Number Of Arguments</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>func sumOf(_ numbers: Int...) -> Int {
     var sum = 0
@@ -52,9 +61,18 @@ sumOf(42, 597, 12)
 }
 let increment = makeIncrementer()
 increment(7)
-</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code></code></pre></div></div></div><div class="case"><div class="name">Map</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>let numbers = [20, 19, 7, 12]
+</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code>let makeIncrementer: (value: number) => number =
+    function (value: number): number { return value + 1; };
+
+
+
+let increment = makeIncrementer;
+console.log(increment(7));
+</code></pre></div></div></div><div class="case"><div class="name">Map</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>let numbers = [20, 19, 7, 12]
 numbers.map { 3 * $0 }
-</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code></code></pre></div></div></div><div class="case"><div class="name">Sort</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>var mutableArray = [1, 5, 3, 12, 2]
+</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code>let numbers = [20, 19, 7, 12];
+numbers.map(value => console.log(value * 3));
+</code></pre></div></div></div><div class="case"><div class="name">Sort</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>var mutableArray = [1, 5, 3, 12, 2]
 mutableArray.sort()
 </code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code></code></pre></div></div></div><div class="case"><div class="name">Named Arguments</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>func area(width: Int, height: Int) -> Int {
     return width * height
@@ -65,7 +83,13 @@ area(width: 2, height: 3)
     func simpleDescription() -> String {
         return "A shape with \(numberOfSides) sides."
     }
-}</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code></code></pre></div></div></div><div class="case"><div class="name">Usage</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>var shape = Shape()
+}</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code>class Shape {
+    private numberOfSides = 0;
+
+    simpleDescription(): string {
+        return "A shape with " + this.numberOfSides + " sides."
+    }
+}</code></pre></div></div></div><div class="case"><div class="name">Usage</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>var shape = Shape()
 shape.numberOfSides = 7
 var shapeDescription = shape.simpleDescription()</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code></code></pre></div></div></div><div class="case"><div class="name">Subclass</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>class NamedShape {
     var numberOfSides: Int = 0
@@ -111,7 +135,16 @@ for item in library {
     } else if item is Song {
         songCount += 1
     }
-}</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code></code></pre></div></div></div><div class="case"><div class="name">Pattern Matching</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>let nb = 42
+}</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code>var movieCount = 0
+var songCount = 0
+
+for (let item of library) {
+    if (item instanceof Movie){
+        ++movieCount;
+    } else if(item instanceof Song){
+        ++songCount;
+    }
+}</code></pre></div></div></div><div class="case"><div class="name">Pattern Matching</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>let nb = 42
 switch nb {
     case 0...7, 8, 9: print("single digit")
     case 10: print("double digits")
@@ -119,23 +152,45 @@ switch nb {
     case 100...999: print("triple digits")
     default: print("four or more digits")
 }
-</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code></code></pre></div></div></div><div class="case"><div class="name">Downcasting</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>for current in someObjects {
+</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code>let nb = 42
+switch (true) {
+    case nb >= 0 && nb <= 9:
+        console.log("single digit");
+    case nb === 10:
+        console.log("double digits");
+    case nb >= 11 && nb <= 99:
+        console.log("double digits");
+    case nb >= 100 && nb <= 999:
+        console.log("triple digits");
+    default:
+        console.log("four or more digits");
+}
+</code></pre></div></div></div><div class="case"><div class="name">Downcasting</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>for current in someObjects {
     if let movie = current as? Movie {
         print("Movie: '\(movie.name)', " +
             "dir. \(movie.director)")
     }
 }
-</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code></code></pre></div></div></div><div class="case"><div class="name">Protocol</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>protocol Nameable {
+</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code>for (let current of someObjects) {
+    if(current instanceof Movie) {
+        console.log("Movie: " + current.name + ", " +
+            "dir. " + current.director);
+    }
+}
+</code></pre></div></div></div><div class="case"><div class="name">Protocol</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>protocol Nameable {
     func name() -> String
 }
 
 func f&lt;T: Nameable>(x: T) {
     print("Name is " + x.name())
 }
-</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code></code></pre></div></div></div><div class="case"><div class="name">Extensions</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>extension Double {
-    var km: Double { return self * 1_000.0 }
-    var m: Double { return self }
-    var cm: Double { return self / 100.0 }
+</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code>interface Nameable {
+    name(): string;
+}
+
+printName(x: Nameable) {
+        console.log("Name is " + x.name());
+}</code></pre></div></div></div><div class="case"><div class="name">Extensions</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>extension Double {
     var mm: Double { return self / 1_000.0 }
     var ft: Double { return self / 3.28084 }
 }
@@ -145,4 +200,23 @@ print("One inch is \(oneInch) meters")
 let threeFeet = 3.ft
 print("Three feet is \(threeFeet) meters")
 // prints "Three feet is 0.914399970739201 meters"
-</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code></code></pre></div></div></div></div></body></html>
+</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code>interface Number {
+    mm(): number;
+    ft(): number;
+       
+}
+
+Number.prototype.mm = function (): number {
+    return this / 1000;
+}
+Number.prototype.ft = function (): number {
+    return this / 3.28084;
+}
+
+let oneInch = 25.4.mm();
+console.log("One inch is " + oneInch + " meters");
+// prints "One inch is 0.0254 meters"
+let threeFeet = 3.0.ft();
+console.log("Three feet is " + threeFeet + " meters");
+// prints "Three feet is 0.914399970739201 meters"
+</code></pre></div></div></div></div></body></html>
