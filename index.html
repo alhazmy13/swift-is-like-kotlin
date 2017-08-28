@@ -7,14 +7,16 @@ myVariable = 50;
 const myConstant = 42; // Constant
 
 /* NOTE::
-* let and var are very similar when used like this outside a function block
+* let and var are very similar when used like this outside 
+* a function block
 */
 
 let name = 'TypeScript';  // globally scoped
 var age = 5; // globally scoped
 
 /* 
-* Also, They are identical when used like this in a function block.
+* Also, They are identical when used like this in 
+* a function block.
 */
 
 function ingWithinEstablishedParameters() {
@@ -24,15 +26,17 @@ function ingWithinEstablishedParameters() {
 
 /* 
 * But the difference is when you used it insied a block. 
-* In example below; let is only visible in the for() loop and var is visible to the whole function.
+* In example below; let is only visible in the for() loop 
+* and var is visible to the whole function.
 */
 
 function myFunction() {
     //x is *not* visible out here
 
     for( let x = 0; x < 5; x++ ) {
-        //x is only visible in here (and in the for() parentheses)
-        //and there is a separate tuce variable for each iteration of the loop
+        //x is only visible in here and in the for() parentheses
+        //and there is a separate tuce variable for each 
+        // iteration of the loop
     }
 
     //x is *not* visible out here
@@ -55,7 +59,8 @@ let oranges = 5
 let fruitSummary = "I have \(apples + oranges) " +
                    "pieces of fruit."</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code>let apples = 3;
 let oranges = 5;
-let fruitSummary = "I have " + (apples + oranges) + " pieces of fruit.";
+let fruitSummary = "I have " + (apples + oranges) +
+ " pieces of fruit.";
 </code></pre></div></div></div><div class="case"><div class="name">Range Operator</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>let names = ["Anna", "Alex", "Brian", "Jack"]
 let count = names.count
 for i in 0..&lt;count {
@@ -134,7 +139,9 @@ sumOf(42, 597, 12);
 let increment = makeIncrementer()
 increment(7)
 </code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code>let makeIncrementer: (value: number) => number =
-    function (value: number): number { return value + 1; };
+    function (value: number): number {
+        return value + 1; 
+    };
 
 
 
@@ -160,7 +167,8 @@ area(width: 2, height: 3)
     private numberOfSides = 0;
 
     simpleDescription(): string {
-        return "A shape with " + this.numberOfSides + " sides."
+        return "A shape with " + this.numberOfSides +
+        " sides.";
     }
 }</code></pre></div></div></div><div class="case"><div class="name">Usage</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>var shape = Shape()
 shape.numberOfSides = 7
@@ -210,7 +218,8 @@ test.simpleDescription()
     }
 
     simpleDescription(): string {
-        return "A shape with " + this.numberOfSides + " sides.";
+        return "A shape with " + this.numberOfSides +
+         " sides.";
     }
 }
 
