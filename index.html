@@ -4,7 +4,49 @@
 myVariable = 50
 let myConstant = 42</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code>var myVariable = 42;
 myVariable = 50;
-const myConstant = 42;</code></pre></div></div></div><div class="case"><div class="name">Explicit Types</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>let explicitDouble: Double = 70</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code>let explicitDouble: number = 70;</code></pre></div></div></div><div class="case"><div class="name">Type Coercion</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>let label = "The width is "
+const myConstant = 42; // Constant
+
+/* NOTE::
+* let and var are very similar when used like this outside a function block
+*/
+
+let name = 'TypeScript';  // globally scoped
+var age = 5; // globally scoped
+
+/* 
+* Also, They are identical when used like this in a function block.
+*/
+
+function ingWithinEstablishedParameters() {
+    let name = 'TypeScript'; //function block scoped
+    var age = 5; //function block scoped
+}
+
+/* 
+* But the difference is when you used it insied a block. 
+* In example below; let is only visible in the for() loop and var is visible to the whole function.
+*/
+
+function myFunction() {
+    //x is *not* visible out here
+
+    for( let x = 0; x < 5; x++ ) {
+        //x is only visible in here (and in the for() parentheses)
+        //and there is a separate tuce variable for each iteration of the loop
+    }
+
+    //x is *not* visible out here
+}
+
+function myFunction() {
+    //x *is* visible out here
+
+    for( var x = 0; x < 5; x++ ) {
+        //x is visible to the whole function
+    }
+
+    //x *is* visible out here
+}</code></pre></div></div></div><div class="case"><div class="name">Explicit Types</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>let explicitDouble: Double = 70</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code>let explicitDouble: number = 70;</code></pre></div></div></div><div class="case"><div class="name">Type Coercion</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>let label = "The width is "
 let width = 94
 let widthLabel = label + String(width)</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code>let label = "The width is ";
 let width = 94;
@@ -67,9 +109,7 @@ greet("Bob", "Tuesday")
 }
 greet("Bob", "Tuesday");</code></pre></div></div></div><div class="case"><div class="name">Tuple Return</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>func getGasPrices() -> (Double, Double, Double) {
     return (3.59, 3.69, 3.79)
-}</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code>const getGasPrices = (): [number, number, number] => {
-    return [3.59, 3.69, 3.79];
-};</code></pre></div></div></div><div class="case"><div class="name">Variable Number Of Arguments</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>func sumOf(_ numbers: Int...) -> Int {
+}</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code>---------</code></pre></div></div></div><div class="case"><div class="name">Variable Number Of Arguments</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>func sumOf(_ numbers: Int...) -> Int {
     var sum = 0
     for number in numbers {
         sum += number
@@ -196,8 +236,7 @@ class Square extends NamedShape {
 let test = new Square(5.2, "square");
 test.area();
 test.simpleDescription();
-</code></pre></div></div></div><div class="case"><div class="name">Checking Type</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>var movieCount = 0
-var songCount = 0
+</code></pre></div></div></div><div class="case"><div class="name">Checking Type</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>var songCount = 0
 
 for item in library {
     if item is Movie {
